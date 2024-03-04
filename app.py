@@ -6,7 +6,7 @@ from dash import dcc, html, Input, Output, ClientsideFunction
 import numpy as np
 import pandas as pd
 import datetime
-from datetime import datetime as dt
+from datetime import datetime as dtD
 import pathlib
 
 # Create dash app
@@ -34,10 +34,11 @@ def description_card():
             ),
         ],
     )
+    
 
 def generate_control_card():
     """
-    :return: A Div containing controls for graphs.
+    :return: A Div containing controls for graphs.D
     """
     return html.Div(
         id="control-card",
